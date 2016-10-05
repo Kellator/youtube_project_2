@@ -35,7 +35,7 @@ function displayYoutubeSearchResults(data) {
 	if (data.items) {
 		data.items.forEach(function(item) {
 		resultElement += "<p><a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'>" + item.snippet.title + "</a></p>" + 
-		"<img src='" + item.snippet.thumbnails.medium.url + "'/>" 
+		"<a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'><img src='" + item.snippet.thumbnails.medium.url + "'/></a>" 
 		;
 		//"<a href = www.youtube.com/watch?" + item.id.videoId +
 	});
