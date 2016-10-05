@@ -14,6 +14,7 @@ var settings = {
 		part: "snippet",
 		type: "video",
 		relevanceLanguage: "en",
+
 	},
 	dataType: 'json',
 	success: callback
@@ -34,7 +35,7 @@ function displayYoutubeSearchResults(data) {
 	if (data.items) {
 		data.items.forEach(function(item) {
 		resultElement += "<p>" + item.snippet.title + "</p>" + 
-		"<img src=" + item.snippet.thumbnails.medium.url + "/>";
+		"<img src='" + item.snippet.thumbnails.medium.url + "'/>";
 		//"<a href = www.youtube.com/watch?" + item.id.videoId +
 	});
 }
