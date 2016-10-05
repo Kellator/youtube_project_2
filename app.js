@@ -34,8 +34,9 @@ function displayYoutubeSearchResults(data) {
 	var resultElement = "";
 	if (data.items) {
 		data.items.forEach(function(item) {
-		resultElement += "<p>" + item.snippet.title + "</p>" + 
-		"<img src='" + item.snippet.thumbnails.medium.url + "'/>";
+		resultElement += "<p><a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'>" + item.snippet.title + "</a></p>" + 
+		"<img src='" + item.snippet.thumbnails.medium.url + "'/>" 
+		;
 		//"<a href = www.youtube.com/watch?" + item.id.videoId +
 	});
 }
