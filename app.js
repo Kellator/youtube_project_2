@@ -14,7 +14,7 @@ var settings = {
 		part: "snippet",
 		type: "video",
 		relevanceLanguage: "en",
-
+		pageToken: "",
 	},
 	dataType: 'json',
 	success: callback
@@ -35,9 +35,8 @@ function displayYoutubeSearchResults(data) {
 	if (data.items) {
 		data.items.forEach(function(item) {
 		resultElement += "<p><a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'>" + item.snippet.title + "</a></p>" + 
-		"<a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'><img src='" + item.snippet.thumbnails.medium.url + "'/></a>" 
-		;
-		//"<a href = www.youtube.com/watch?" + item.id.videoId +
+		"<a href = 'https://www.youtube.com/watch?v=" + item.id.videoId + "'><img class='col_6' src='" + item.snippet.thumbnails.high.url + "'/></a>" +
+		"<div class='channel_button'><button><a href = 'https://www.youtube.com/channel/" + item.snippet.channelId + "'>For More from this Channel<br>CLICK HERE!</button></div>";		
 	});
 }
 else {

@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta charset="utf-8" name="Youtube Project 2">
 	<!--ajax script-->
 	<!--api script?-->
 	<script src="https://apis.google.com/js/api.js"></script>
 	<title>Youtube Project 2</title>
 </head>
-<body>
-	<h1>ThinkfulTube <br> YouTube Search Project</h1>
-	<form class="js_search_form">
+<body class = "row">
+	<h1 class="col_12">ThinkfulTube <br> YouTube Search Project</h1>
+	<form class="js_search_form search_form col_6">
 	<label for="query"></label>
-		<input class="js_query" type="text" placeholder="What are you looking for?">
-		<button id="js_user_submit" type="submit" name="user_submit">Search</button>
+		<input class="js_query query_input col_4" type="text" placeholder="What are you looking for?">
+		<button class= "submit_button col_2" id="js_user_submit" type="submit" name="user_submit">Search</button>
 	</form>
-	<div class="js_search_results">
-		
+	<div class="js_search_results search_results col_12">
+		<h3>Search Results</h3>
+
 	</div>
+	<address>
+		<p class="address_paragraph">Search created by Kelly Miller  |  <a class="address_email" href="mailto:k.macleod21@gmail.com">Email Me!</a></p>
+	</address>
 <!--jQuery CDN-->
 <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 <!--javascript link-->

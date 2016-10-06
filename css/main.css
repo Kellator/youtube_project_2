@@ -1,0 +1,53 @@
+* {
+	font-family: 'Lato', sans-serif;
+	background-color: #484b4f;
+}
+h1 {
+	color: #b7b9bc;
+}
+h3 {
+	text-align: center;
+	color: #484b4f;
+	background-color: #ffffff;
+}
+.hidden {
+	display: none;
+}
+.search_results {
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 4px;
+	border:solid 1px #e6e8ed;
+	background-color: #ffffff;
+}
+.query_input, .submit_button, button {
+	border-radius: 4px;
+	border: solid 2px #e6e8ed;
+	background-color: #ffffff;
+	font-size: 13px;
+
+}
+.submit_button {
+	color: #ffffff;
+	background-color: #37ad22;
+	border-color: #37ad22;
+}
+p, a , .channel_button{
+	background-color: #ffffff;
+	text-align: center;
+	margin-top:10px;
+}
+.search_form {
+	margin-bottom: 10px;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+address, .address_paragraph, .address_email {
+	background-color: #484b4f;
+	color: #ffffff;
+	text-align: left;
+}
